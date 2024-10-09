@@ -1,8 +1,14 @@
 import sys
 import time
 
-# Print a welcome message to the user
-print("\nWelcome to InfoTechCenter V1.0\n")
+# ANSI escape codes for text colors
+CYAN = "\033[96m"
+GREEN = "\033[92m"
+BLUE = "\033[34m"
+RESET = "\033[0m"  # Resets color to default
+
+# Print a welcome message to the user in blue
+print(f"\n{BLUE}Welcome to InfoTechCenter V1.0{RESET}\n")
 
 x = 0  # Counter variable for loop iterations
 ellipsis = 0  # Counter for the number of dots in the boot message
@@ -10,8 +16,8 @@ ellipsis = 0  # Counter for the number of dots in the boot message
 # Loop that runs 20 times to simulate the system booting process
 while x != 20:
     x += 1  # Increment the loop counter
-    # Create the boot message with a dynamic number of dots (based on ellipsis)
-    message = ("InfoTech Center System Booting" + "." * ellipsis)
+    # Create the boot message in cyan with a dynamic number of dots (based on ellipsis)
+    message = (f"{CYAN}InfoTech Center System Booting{RESET}" + "." * ellipsis)
 
     # Increment the ellipsis to add more dots on the next iteration
     ellipsis += 1
@@ -28,4 +34,4 @@ while x != 20:
 
     # Once the loop runs 20 times, print the final message and exit the loop
     if x == 20:
-        print("\n\nOperating System Booted Up - Retina Scanned - Access Granted")
+        print(f"\n\n{GREEN}Operating System Booted Up - Retina Scanned - Access Granted{RESET}")
