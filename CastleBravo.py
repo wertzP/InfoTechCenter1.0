@@ -10,6 +10,9 @@ RESET = "\033[0m"  # Resets color to default
 # Print a welcome message to the user in blue
 print(f"\n{BLUE}Welcome to InfoTechCenter V1.0{RESET}\n")
 
+timeToSleep = 2.5  # Variable to set the time library to 2.5 seconds when called
+time.sleep(timeToSleep)  #Calling the time to sleep with the variable with the value timeToSleep
+
 x = 0  # Counter variable for loop iterations
 ellipsis = 0  # Counter for the number of dots in the boot message
 
