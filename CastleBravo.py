@@ -1,5 +1,7 @@
 import sys
 import time
+import random
+from time import sleep
 
 # ANSI escape codes for text colors
 CYAN = "\033[96m"
@@ -92,7 +94,7 @@ def vehicleResponsSystem():
         # Handle all other weather conditions (e.g., sunny)
         print(f"\nThe NWS is calling for {weatherAlert} skies, drive carefully to get to your destination!")
         sleep(1)
-        print("\nVRS has been disengaged")
+        print("\nVRS has been disengaged.")
 
 # Call the vehicle response system to execute the appropriate actions based on the weather alert
 vehicleResponsSystem()
@@ -104,8 +106,6 @@ print("\n**************************************************************\n")
 # Indicate the Gasoline Branch section
 print("Gasoline Branch\n")
 
-import random
-from time import sleep
 
 # Function to simulate the gas level of a car
 def gasLevelGauge():
